@@ -15,13 +15,18 @@
         "doctrine/orm": "2.4.1",
         "symfony/yaml": "2.*"
     },
-     "autoload": {
-		"classmap": [
+    "autoload": {
+	"classmap": [
             "Doctrine",
             "Doctrine/Interface",
             "Controller",
             "Controller/Interface"
-		]
-	}
+	]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
     
 }
