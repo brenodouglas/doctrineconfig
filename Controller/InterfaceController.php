@@ -6,6 +6,6 @@ interface InterfaceController
     
     public function getDoctrine();
     public function getEntityManager();
-    public function getRepository();
+    public function getRepository($repository);
     
 }
