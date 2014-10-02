@@ -1,0 +1,27 @@
+{
+    "name": "brenodouglas/mvc",
+    "description": "Utility config doctrine",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Breno Douglas",
+            "email": "breno_douglas@hotmail.com"
+        }
+    ],
+    "require": {
+        "php" : ">=5.3",
+        "doctrine/common": "2.4.*",
+        "doctrine/dbal": "2.4.1",
+        "doctrine/orm": "2.4.1",
+        "symfony/yaml": "2.*"
+    },
+     "autoload": {
+		"classmap": [
+            "Doctrine",
+            "Doctrine/Interface",
+            "Controller",
+            "Controller/Interface"
+		]
+	}
+    
+}
