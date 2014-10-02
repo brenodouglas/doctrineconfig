@@ -1,5 +1,5 @@
 {
-    "name": "brenodouglas/mvc",
+    "name": "brenodouglas/doctrineconfig",
     "description": "Utility config doctrine",
     "license": "MIT",
     "authors": [
@@ -10,16 +10,23 @@
     ],
     "require": {
         "php" : ">=5.3",
+        "composer/composer": "1.0.*@dev",
         "doctrine/common": "2.4.*",
         "doctrine/dbal": "2.4.1",
         "doctrine/orm": "2.4.1",
         "symfony/yaml": "2.*"
     },
-     "autoload": {
-		"classmap": [
+    "autoload": {
+	   "classmap": [
             "Doctrine",
-            "Controller",
+            "Controller"
 		]
-	}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.2-dev"
+        }
+    }
+
     
 }
