@@ -2,7 +2,6 @@
 
 namespace RespectDoctrine\Controller;
 
-use RespectDoctrine\Controller\Interface\InterfaceController;
 use RespectDoctrine\Doctrine\Doctrine;
 
 /**

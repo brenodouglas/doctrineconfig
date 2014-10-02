@@ -1,5 +1,5 @@
 <?php
-namespace   RespectDoctrine\Doctrine\Interface;
+namespace   RespectDoctrine\Doctrine;
 
 interface InterfaceDoctrine 
 {

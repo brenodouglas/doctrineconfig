@@ -2,7 +2,6 @@
 
 namespace RespectDoctrine\Doctrine;
 
-use RespectDoctrine\Doctrine\Interface\InterfaceDoctrine;
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\ORM\EntityManager;
 
@@ -28,6 +27,11 @@ class Doctrine implements InterfaceDoctrine
      * @var String
      */
     private $config;
+    
+    /**
+     * @var boolean
+     */
+    public static $isDevMode = true;
     
     /**
      * Get EntityManage for DataBase
@@ -68,7 +72,7 @@ class Doctrine implements InterfaceDoctrine
         } else {
             $this->config = $dataBase[$dataBaseName];
         }
-        
+
         return $this->config;
     }
     
@@ -86,7 +90,7 @@ class Doctrine implements InterfaceDoctrine
         
         $doctrineSetup = (object) $config['doctrine'];
         
-        $setup = Setup::createAnnotationMetadataConfiguration($doctrineSetup->entity, $isDevMode);
+        $setup = Setup::createAnnotationMetadataConfiguration($doctrineSetup->entity, self::$isDevMode);
         $setup->setProxyDir($doctrineSetup->metadata);
         
         return $setup;
@@ -96,9 +100,18 @@ class Doctrine implements InterfaceDoctrine
      *
      * @param String
      */
-    private static function setConfigDir($dir) 
+    public static function setConfigDir($dir) 
     {
         self::$dir = $dir;
+    }
+    
+     /**
+     *
+     * @param String
+     */
+    public static function setIsDevMode($devMode) 
+    {
+        self::$isDevMode = $devMode;
     }
     
 }

@@ -1,5 +1,5 @@
 <?php
-namespace RespectDoctrine\Controller\Interface;
+namespace RespectDoctrine\Controller;
 
 interface InterfaceController 
 {
