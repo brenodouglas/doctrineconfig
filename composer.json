@@ -20,11 +20,11 @@
 	   "classmap": [
             "Doctrine",
             "Controller"
-		]
+      ]
     },
 
     "bin": ["bin/doctrine", "bin/doctrine.php"],
-    
+
     "extra": {
         "branch-alias": {
             "dev-master": "1.2-dev"

@@ -18,10 +18,12 @@
  */
 
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
+use RespectDoctrine\Doctrine;
+
+Doctrine::setConfigDir("../app/config.php");
+Doctrine::setIsDevMode(true);
 
 (@include_once __DIR__ . '/../vendor/autoload.php') || @include_once __DIR__ . '/../../../autoload.php';
-
-use RespectDoctrine\Doctrine;
 
 $doctrine = new Doctrine();
 $em = $doctrine->getEntityManager();
