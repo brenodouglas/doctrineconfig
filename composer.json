@@ -23,7 +23,7 @@
       ]
     },
 
-    "bin": ["config/doctrine", "config/doctrine.php"],
+    "bin": ["config/doctrine-config.php"],
 
     "extra": {
         "branch-alias": {
