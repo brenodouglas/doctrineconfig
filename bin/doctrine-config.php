@@ -17,13 +17,13 @@
  * <http://www.doctrine-project.org>.
  */
 
+(@include_once __DIR__ . '/../vendor/autoload.php') || @include_once __DIR__ . '/../../../autoload.php';
+
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
-use RespectDoctrine\Doctrine;
+use RespectDoctrine\Doctrine\Doctrine;
 
 Doctrine::setConfigDir("../app/config.php");
 Doctrine::setIsDevMode(true);
-
-(@include_once __DIR__ . '/../vendor/autoload.php') || @include_once __DIR__ . '/../../../autoload.php';
 
 $doctrine = new Doctrine();
 $em = $doctrine->getEntityManager();
