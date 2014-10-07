@@ -3,7 +3,7 @@
 namespace RespectDoctrine\Controller;
 
 use RespectDoctrine\Doctrine\Doctrine;
-
+use RespectDoctrine\Doctrine\DoctrineDm;
 /**
  * @package Controller
  * @author Breno Douglas <bdouglasans@gmail.com>
@@ -30,6 +30,24 @@ abstract class AbstractController implements InterfaceController
     public function getEntityManager()
     {
         return (new Doctrine($dataBase))->getEntityManager();
+    }
+    
+    /**
+     *
+     * @return DoctrineDm
+     */
+    public function getDoctrineDocument() 
+    {
+        return new DoctrineDm();
+    }
+    
+    /**
+     *
+     * @return DocumentManager
+     */
+    public function getDocumentManager() 
+    {
+        return (new DoctrineDm())->getDocumentManager();
     }
     
     /**
