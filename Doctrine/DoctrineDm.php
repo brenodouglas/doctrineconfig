@@ -61,10 +61,10 @@ class DoctrineDm
         $dataBase = (object) $conn['mongodb'];
         
         $config = new Configuration();
-        $config->setProxyDir($dataBase->dirProxy);
-        $config->setProxyNamespace($dataBase->namespaceProxy);
-        $config->setHydratorDir($dataBase->dirHydrator);
-        $config->setHydratorNamespace($dataBase->namespaceHydrator);
+        $config->setProxyDir($dataBase->proxy['dir']);
+        $config->setProxyNamespace($dataBase->proxy['namespace']);
+        $config->setHydratorDir($dataBase->hydrator['dir']);
+        $config->setHydratorNamespace($dataBase->hydrator['namespace']);
         $config->setMetadataDriverImpl(AnnotationDriver::create($dataBase->entityDir));
     }
   
