@@ -1,4 +1,4 @@
-<<?php
+<?php
 namespace RespectDoctrine\Hydrator;
 
 interface InterfaceHydrator
