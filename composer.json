@@ -19,7 +19,8 @@
     "autoload": {
 	   "classmap": [
             "Doctrine",
-            "Controller"
+            "Controller",
+            "Hydrator"
       ]
     },
 
