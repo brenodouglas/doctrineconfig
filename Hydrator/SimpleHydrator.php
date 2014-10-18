@@ -4,7 +4,7 @@ namespace RespectDoctrine\Hydrator;
 /**
 * @author Breno Douglas <bdouglasans@gmail.com>
 */
-class SimpleHydrator implements SimplesHydrator
+class SimpleHydrator implements InterfaceHydrator
 {
     
     /**

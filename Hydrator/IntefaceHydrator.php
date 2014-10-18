@@ -1,7 +1,7 @@
 <<?php
 namespace RespectDoctrine\Hydrator;
 
-interface InterfaceController 
+interface InterfaceHydrator
 {
     
     public function hydrate(array $data, &$object);
