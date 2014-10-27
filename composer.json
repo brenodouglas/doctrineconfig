@@ -15,13 +15,15 @@
         "doctrine/common": "2.4.*",
         "doctrine/dbal": "2.4.1",
         "doctrine/orm": "2.4.1",
-        "symfony/yaml": "2.*"
+        "symfony/yaml": "2.*",
+        "symfony/dependency-injection": "2.6.*@dev"
     },
     "autoload": {
 	   "classmap": [
             "Doctrine",
             "Controller",
-            "Hydrator"
+            "Hydrator",
+            "Controller/Di"
       ]
     },
 

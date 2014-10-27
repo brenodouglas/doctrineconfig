@@ -4,6 +4,8 @@ namespace RespectDoctrine\Controller;
 
 use RespectDoctrine\Doctrine\Doctrine;
 use RespectDoctrine\Doctrine\DoctrineDm;
+use RespectDoctrine\Controller\Di\DiHelper;
+
 /**
  * @package Controller
  * @author Breno Douglas <bdouglasans@gmail.com>
@@ -64,4 +66,8 @@ abstract class AbstractController implements InterfaceController
         $this->dataBase = $dataBase;
     }
     
+    public function getService($service) 
+    {
+        return (new DiHelper())->get($service);
+    }
 }
