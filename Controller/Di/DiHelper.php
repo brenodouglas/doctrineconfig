@@ -42,6 +42,7 @@ class DiHelper
 			}
 		}
 		
+		self::$container->compile();
 	}
 
 	public function get($service)
