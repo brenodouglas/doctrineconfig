@@ -14,10 +14,10 @@ class DiHelper
 	private static $container;
 	private static $configDir;
 
-	public static function registerConfig($dirConfigm, $type) 
-	{	
+	public static function registerConfig($dirConfig, $type) 
+	{		
 		$services = self::extractConfig($dirConfig);
-
+		
 		self::$container = new ContainerBuilder();
 
 		switch ($type) {
@@ -36,6 +36,7 @@ class DiHelper
 		
 		
 		foreach($services as $service){
+
 			if(file_exists($service)) {
 				self::$loader->load($service);
 			}
@@ -49,7 +50,7 @@ class DiHelper
 	}
 
 	private static function extractConfig($dirConfig) 
-	{
+	{	
 		if(file_exists($dirConfig)) {
 			$config = require_once ($dirConfig);
 			return $config['container']['services'];
