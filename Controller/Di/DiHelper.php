@@ -50,6 +50,11 @@ class DiHelper
 		return self::$container->get($service);
 	}
 
+	public function getContainer()
+	{
+		return self::$container;
+	}
+
 	private static function extractConfig($dirConfig) 
 	{	
 		if(file_exists($dirConfig)) {

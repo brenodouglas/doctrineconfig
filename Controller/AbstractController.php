@@ -70,4 +70,9 @@ abstract class AbstractController implements InterfaceController
     {
         return (new DiHelper())->get($service);
     }
+
+    public function getContainer()
+    {
+        return (new DiHelper())->getContainer();
+    }
 }
