@@ -22,15 +22,15 @@ class DiHelper
 
 		switch ($type) {
 			case 'xml':
-				self::$loader = new XmlFileLoader($container, new FileLocator(__DIR__));
+				self::$loader = new XmlFileLoader(self::$container, new FileLocator(__DIR__));
 				break;
 			
 			case 'php':
-				self::$loader = new PhpFileLoader($container, new FileLocator(__DIR__));
+				self::$loader = new PhpFileLoader(self::$container, new FileLocator(__DIR__));
 				break;
 
 			default:
-				self::$loader = new YamlFileLoader($container, new FileLocator(__DIR__));
+				self::$loader = new YamlFileLoader(self::$container, new FileLocator(__DIR__));
 				break;
 		}
 		
