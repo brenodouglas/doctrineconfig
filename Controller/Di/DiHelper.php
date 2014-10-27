@@ -3,6 +3,8 @@ namespace RespectDoctrine\Controller\Di;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
+use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 class DiHelper 
@@ -12,18 +14,33 @@ class DiHelper
 	private static $container;
 	private static $configDir;
 
-	public static function registerConfig($dirConfig) 
+	public static function registerConfig($dirConfigm, $type) 
 	{	
 		$services = self::extractConfig($dirConfig);
 
 		self::$container = new ContainerBuilder();
-		self::$loader = new YamlFileLoader($container, new FileLocator(__DIR__));
+
+		switch ($type) {
+			case 'xml':
+				self::$loader = new XmlFileLoader($container, new FileLocator(__DIR__));
+				break;
+			
+			case 'php':
+				self::$loader = new PhpFileLoader($container, new FileLocator(__DIR__));
+				break;
+
+			default:
+				self::$loader = new YamlFileLoader($container, new FileLocator(__DIR__));
+				break;
+		}
+		
 		
 		foreach($services as $service){
 			if(file_exists($service)) {
-				self::$loader->load('services.yml');
+				self::$loader->load($service);
 			}
 		}
+		
 	}
 
 	public function get($service)
