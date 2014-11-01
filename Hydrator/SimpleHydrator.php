@@ -30,6 +30,10 @@ class SimpleHydrator implements InterfaceHydrator
      */
     public function extractArray($object)
     {
+        if(method_exists($object, "toArray")) {
+            return $object->toArray();
+        }
+
         $arrayCollection = new \ArrayIterator();
         $reflection = new \ReflectionClass($object);
         

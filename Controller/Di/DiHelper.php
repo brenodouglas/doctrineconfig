@@ -14,7 +14,7 @@ class DiHelper
 	private static $container;
 	private static $configDir;
 
-	public static function registerConfig($dirConfig, $type) 
+	public static function registerConfig($dirConfig, $type = "yml") 
 	{		
 		$services = self::extractConfig($dirConfig);
 		
