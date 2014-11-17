@@ -16,11 +16,11 @@
  * and is licensed under the MIT license. For more information, see
  * <http://www.doctrine-project.org>.
  */
-
 (@include_once __DIR__ . '/../vendor/autoload.php') || @include_once __DIR__ . '/../../../autoload.php';
 
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use RespectDoctrine\Doctrine\Doctrine;
+use Doctrine\DBAL\Migrations\Tools\Console\Command as MigrationsCommand;
 
 Doctrine::setConfigDir("../app/config.php");
 Doctrine::setIsDevMode(true);
@@ -28,6 +28,17 @@ Doctrine::setIsDevMode(true);
 $doctrine = new Doctrine();
 $em = $doctrine->getEntityManager();
 $helper = ConsoleRunner::createHelperSet($em);
+
+#Namespace generate migration
+chdir(__DIR__.'/../app/migrations');
+
 $commands = array();
+$commands[] = new MigrationsCommand\ExecuteCommand();
+$commands[] = new MigrationsCommand\GenerateCommand();
+$commands[] = new MigrationsCommand\DiffCommand();
+$commands[] = new MigrationsCommand\MigrateCommand();
+$commands[] = new MigrationsCommand\StatusCommand();
+$commands[] = new MigrationsCommand\VersionCommand();
+
 
 ConsoleRunner::run($helper, $commands);

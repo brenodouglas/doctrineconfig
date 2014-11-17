@@ -16,7 +16,8 @@
         "doctrine/dbal": "2.4.1",
         "doctrine/orm": "2.4.1",
         "symfony/yaml": "2.*",
-        "symfony/dependency-injection": "2.6.*@dev"
+        "symfony/dependency-injection": "2.6.*@dev",
+        "doctrine/migrations": "1.0.*"
     },
     "autoload": {
 	   "classmap": [
