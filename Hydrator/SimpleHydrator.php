@@ -28,7 +28,7 @@ class SimpleHydrator implements InterfaceHydrator
      * @param   Object $object
      * @returns array Array extracted of the object
      */
-    public function extractArray($object)
+    public function extractArray($object, $isRecursive = false)
     {
         if(method_exists($object, "toArray")) {
             return $object->toArray();
@@ -43,8 +43,8 @@ class SimpleHydrator implements InterfaceHydrator
             $value = $this->resolveGetNameMethod($key, $object);
             
             if($value !== null) {
-                if(is_object($value)) 
-                    $arrayCollection->offsetSet($key, $this->extractArray($value));
+                if(is_object($value) && ! $isRecursive) 
+                    $arrayCollection->offsetSet($key, $this->extractArray($value, true));
                 else
                     $arrayCollection->offsetSet($key, $value);
             }
