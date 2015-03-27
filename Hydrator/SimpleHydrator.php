@@ -43,7 +43,10 @@ class SimpleHydrator implements InterfaceHydrator
             $value = $this->resolveGetNameMethod($key, $object);
             
             if($value !== null) {
-                $arrayCollection->offsetSet($key, $value);
+                if(is_object($value)) 
+                    $arrayCollection->offsetSet($key, $this->extractArray($value));
+                else
+                    $arrayCollection->offsetSet($key, $value);
             }
         }
         
