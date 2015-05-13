@@ -101,6 +101,12 @@ class Doctrine implements InterfaceDoctrine
         $setup->setSecondLevelCacheEnabled(); 
         $setup->getSecondLevelCacheConfiguration()->setCacheFactory($factory); 
         
+        $filters = $doctrineSetup->filters;
+        
+        foreach ($filters as $name => $filter) {
+            $setup->addFilter($name, $filter);
+        }
+        
         return $setup;
     }
     
