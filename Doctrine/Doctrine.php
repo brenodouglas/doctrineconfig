@@ -93,6 +93,20 @@ class Doctrine implements InterfaceDoctrine
         $setup = Setup::createAnnotationMetadataConfiguration($doctrineSetup->entity, self::$isDevMode);
         $setup->setProxyDir($doctrineSetup->metadata);
         
+        /**Create cache region and factory **/
+        $cache = new \Doctrine\Common\Cache\ApcCache;
+        $cacheRegionConfiguration = new \Doctrine\ORM\Cache\RegionsConfiguration(); 
+        $factory = new \Doctrine\ORM\Cache\DefaultCacheFactory($cacheRegionConfiguration, $cache); 
+        
+        $setup->setSecondLevelCacheEnabled(); 
+        $setup->getSecondLevelCacheConfiguration()->setCacheFactory($factory); 
+        
+        $filters = $doctrineSetup->filters;
+        
+        foreach ($filters as $name => $filter) {
+            $setup->addFilter($name, $filter);
+        }
+        
         return $setup;
     }
     
