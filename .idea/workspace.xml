@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e6cb45c-bcf1-4088-8bde-c0b939514294" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Doctrine/Functions/LevenshteinFunction.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Doctrine/Functions/MatchAgainst.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Doctrine/Functions/SoundexFunction.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.phpintel/d42e591c3ebc0ce4944edc2d29e66504" afterPath="$PROJECT_DIR$/.phpintel/d42e591c3ebc0ce4944edc2d29e66504" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.phpintel/index" afterPath="$PROJECT_DIR$/.phpintel/index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/AbstractController.php" afterPath="$PROJECT_DIR$/Controller/AbstractController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/Di/DiHelper.php" afterPath="$PROJECT_DIR$/Controller/Di/DiHelper.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Doctrine/Doctrine.php" afterPath="$PROJECT_DIR$/Doctrine/Doctrine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Doctrine/DoctrineDm.php" afterPath="$PROJECT_DIR$/Doctrine/DoctrineDm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hydrator/IntefaceHydrator.php" afterPath="$PROJECT_DIR$/Hydrator/IntefaceHydrator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Controller/InterfaceController.php" afterPath="$PROJECT_DIR$/Controller/InterfaceController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Doctrine/InterfaceDoctrine.php" afterPath="$PROJECT_DIR$/Doctrine/InterfaceDoctrine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hydrator/SimpleHydrator.php" afterPath="$PROJECT_DIR$/Hydrator/SimpleHydrator.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/autoload.php" afterPath="$PROJECT_DIR$/vendor/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/doctrine-config" afterPath="$PROJECT_DIR$/bin/doctrine-config" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="doctrineconfig.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,22 +28,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SoundexFunction.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Doctrine/Functions/SoundexFunction.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="465">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#53#103#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MatchAgainst.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Doctrine/Functions/MatchAgainst.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1350">
+            <state vertical-scroll-proportion="32.75" vertical-offset="801" max-vertical-offset="1350">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding>
                 <element signature="e#54#104#0#PHP" expanded="true" />
@@ -75,8 +43,8 @@
       <file leaf-file-name="LevenshteinFunction.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Doctrine/Functions/LevenshteinFunction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="525">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="525">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="25" />
               <folding>
                 <element signature="e#53#103#0#PHP" expanded="true" />
               </folding>
@@ -87,11 +55,31 @@
       <file leaf-file-name="Doctrine.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Doctrine/Doctrine.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.78142077" vertical-offset="966" max-vertical-offset="1830">
-              <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.4918033" vertical-offset="1320" max-vertical-offset="2100">
+              <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding>
                 <element signature="e#44#73#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doctrine-config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/doctrine-config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doctrine-config" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/doctrine-config">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="150">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -107,6 +95,8 @@
         <option value="$PROJECT_DIR$/Doctrine/Functions/SoundexFunction.php" />
         <option value="$PROJECT_DIR$/Doctrine/Functions/MatchAgainst.php" />
         <option value="$PROJECT_DIR$/Doctrine/Functions/LevenshteinFunction.php" />
+        <option value="$PROJECT_DIR$/bin/doctrine-config" />
+        <option value="$PROJECT_DIR$/Doctrine/Doctrine.php" />
       </list>
     </option>
   </component>
@@ -193,6 +183,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrineconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doctrineconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -200,8 +204,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../certifiq" />
     <property name="LayoutCode.rearrangeEntriesPHP" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="Doctrine&#9;null&#9;null" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -227,6 +232,9 @@
     <list size="0" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="0e6cb45c-bcf1-4088-8bde-c0b939514294" name="Default" comment="" />
@@ -282,10 +290,26 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bin/doctrine-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="573">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/doctrine-config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="549">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Doctrine/Functions/SoundexFunction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="465">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.027322404" vertical-offset="0" max-vertical-offset="549">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="45" />
           <folding>
             <element signature="e#53#103#0#PHP" expanded="true" />
           </folding>
@@ -294,7 +318,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Doctrine/Functions/MatchAgainst.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="1350">
+        <state vertical-scroll-proportion="32.75" vertical-offset="801" max-vertical-offset="1350">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding>
             <element signature="e#54#104#0#PHP" expanded="true" />
@@ -304,8 +328,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Doctrine/Functions/LevenshteinFunction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.25" vertical-offset="0" max-vertical-offset="525">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="525">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="25" />
           <folding>
             <element signature="e#53#103#0#PHP" expanded="true" />
           </folding>
@@ -314,8 +338,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Doctrine/Doctrine.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.78142077" vertical-offset="966" max-vertical-offset="1830">
-          <caret line="93" column="54" selection-start-line="93" selection-start-column="54" selection-end-line="93" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.4918033" vertical-offset="1320" max-vertical-offset="2100">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
           <folding>
             <element signature="e#44#73#0#PHP" expanded="true" />
           </folding>

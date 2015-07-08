@@ -99,8 +99,12 @@ class Doctrine implements InterfaceDoctrine
         $factory = new \Doctrine\ORM\Cache\DefaultCacheFactory($cacheRegionConfiguration, $cache); 
         
         $setup->setSecondLevelCacheEnabled(); 
-        $setup->getSecondLevelCacheConfiguration()->setCacheFactory($factory); 
-        
+        $setup->getSecondLevelCacheConfiguration()->setCacheFactory($factory);
+
+        $setup->addCustomStringFunction("SOUINDEX", 'RespectDoctrine\Doctrine\Functions\SoundexFunction');
+        $setup->addCustomStringFunction("MATCH", 'RespectDoctrine\Doctrine\Functions\MatchAgainst');
+        $setup->addCustomNumericFunction("LEVENSHTEIN", 'RespectDoctrine\Doctrine\Functions\LevenshteinFunction');
+
         $filters = $doctrineSetup->filters;
         
         foreach ($filters as $name => $filter) {
