@@ -101,7 +101,7 @@ class Doctrine implements InterfaceDoctrine
         $setup->setSecondLevelCacheEnabled(); 
         $setup->getSecondLevelCacheConfiguration()->setCacheFactory($factory);
 
-        $setup->addCustomStringFunction("SOUINDEX", 'RespectDoctrine\Doctrine\Functions\SoundexFunction');
+        $setup->addCustomStringFunction("SOUNDEX", 'RespectDoctrine\Doctrine\Functions\SoundexFunction');
         $setup->addCustomStringFunction("MATCH", 'RespectDoctrine\Doctrine\Functions\MatchAgainst');
         $setup->addCustomNumericFunction("LEVENSHTEIN", 'RespectDoctrine\Doctrine\Functions\LevenshteinFunction');
 
