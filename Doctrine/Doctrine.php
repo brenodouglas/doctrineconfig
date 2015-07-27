@@ -27,7 +27,12 @@ class Doctrine implements InterfaceDoctrine
      * @var String
      */
     private $config;
-    
+
+    /**
+     * @var array
+     */
+    private $filters;
+
     /**
      * @var boolean
      */
@@ -47,11 +52,14 @@ class Doctrine implements InterfaceDoctrine
                 $conn = $this->getConn($dataBase);
                 $config = $this->getConfig();
                 self::$entityManager = EntityManager::create($conn, $config);
+
+                foreach ($this->filters as $filter)
+                    self::$entityManager->getFilters()->enable($filter);
             }
         } catch(\Exception $e){
             echo $e->getMessage();die;
         }
-        
+
         return self::$entityManager;
         
     }
@@ -67,11 +75,10 @@ class Doctrine implements InterfaceDoctrine
         
         $dataBase = $conn['database'];
         
-        if (! isset($dataBaseNam)) {
+        if (! isset($dataBaseNam))
             $this->config = $dataBase[$dataBase['default']];
-        } else {
+        else
             $this->config = $dataBase[$dataBaseName];
-        }
 
         return $this->config;
     }
@@ -82,9 +89,8 @@ class Doctrine implements InterfaceDoctrine
     */
     private function getConfig()
     {   
-        if (empty(self::$dir)) {
+        if (empty(self::$dir))
             throw new \Exception("Informe o diretorio que se encontra o config");
-        }
         
         $config = require self::$dir;
         
@@ -106,9 +112,11 @@ class Doctrine implements InterfaceDoctrine
         $setup->addCustomNumericFunction("LEVENSHTEIN", 'RespectDoctrine\Doctrine\Functions\LevenshteinFunction');
 
         $filters = $doctrineSetup->filters;
-        
+        $this->filters = [];
+
         foreach ($filters as $name => $filter) {
             $setup->addFilter($name, $filter);
+            $this->filters[] = $name;
         }
         
         return $setup;
