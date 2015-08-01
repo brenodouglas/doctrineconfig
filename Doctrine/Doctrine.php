@@ -80,6 +80,7 @@ class Doctrine implements InterfaceDoctrine
         else
             $this->config = $dataBase[$dataBaseName];
 
+
         return $this->config;
     }
     
@@ -108,6 +109,7 @@ class Doctrine implements InterfaceDoctrine
         $setup->getSecondLevelCacheConfiguration()->setCacheFactory($factory);
 
         $setup->addCustomStringFunction("SOUNDEX", 'RespectDoctrine\Doctrine\Functions\SoundexFunction');
+        $setup->addCustomStringFunction("RAND", 'RespectDoctrine\Doctrine\Functions\Rand');
         $setup->addCustomStringFunction("MATCH", 'RespectDoctrine\Doctrine\Functions\MatchAgainst');
         $setup->addCustomNumericFunction("LEVENSHTEIN", 'RespectDoctrine\Doctrine\Functions\LevenshteinFunction');
 
